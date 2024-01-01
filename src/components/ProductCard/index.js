@@ -17,16 +17,26 @@ const ProductCard = ({ products = [] }) => {
                   </a>
                   <div className="mt-4">
                     <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1 uppercase">{category}</h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium">{title}</h2>
-                    <p className="mt-1 text-md font-semibold">${price}</p>
+                    <h2 className="text-gray-900 title-font text-lg font-medium text-center">{title}</h2>
+                    <p className="mt-1 text-md font-semibold text-center P">${price}</p>
                   </div>
                 </Link>
               )
             })
           }
         </div>
+        <div className='flex flex-wrap -m-4'>
+            <img className='mt-40 ml-10' src="p1.png" alt="" />
+        </div>
+        <div className='flex flex-wrap -m-4'>
+            <img className='mt-40 ml-20' src="p2.png" alt="" />
+            <img className='mt-40 ml-20' src="p3.png" alt="" />
+        </div>
+
       </div>
+
     </section>
+
   )
 }
 
